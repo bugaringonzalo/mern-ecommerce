@@ -34,7 +34,8 @@ const Arrow = styled.div `
 const Wrapper = styled.div `
     height: 100%;
     display: flex;
-    transform: translateX($props => props.slideIndex * -100}vw);
+    transition: all 1.5s ease;
+    transform: translateX(${props => props.slideIndex * -100}vw);
     ` 
 const Slide = styled.div `
     width: 100vw;
@@ -86,7 +87,7 @@ function Slider() {
         <Arrow direction="left" onClick={() => handleClick('left')}>
             <ArrowLeftOutlined />
         </Arrow>
-        <Wrapper>
+        <Wrapper slideIndex={slideIndex}>
             {sliderItems.map(item => (
                 <Slide bg={item.bg}>
                     <ImageContainer>

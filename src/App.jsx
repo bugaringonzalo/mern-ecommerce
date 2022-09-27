@@ -8,9 +8,8 @@ import Slider from './components/Slider';
 function App() {
   return (
     <div>
-      <Announcement />
-      <Navbar />
-      <Slider />
+      
+      <Home />
     </div>
   );
 }

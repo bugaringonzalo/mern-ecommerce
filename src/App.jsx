@@ -4,12 +4,16 @@ import Navbar from './components/Navbar';
 import Announcement from './components/Announcement';
 import './App.css';
 import Slider from './components/Slider';
+import Product from './pages/Product';
+import ProductList from './pages/ProductList';
+import Register from './pages/Register';
+
 
 function App() {
   return (
     <div>
       
-      <Home />
+      <Register />
     </div>
   );
 }
